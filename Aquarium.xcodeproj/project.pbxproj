@@ -1139,6 +1139,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = WE52628779;
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Aquarium" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1436,9 +1442,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = YES;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = WE52628779;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1450,6 +1459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.juggleware.Aquarium2;
 				PRODUCT_NAME = Aquarium;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Juggleware Developers Profile";
 			};
 			name = Debug;
 		};
@@ -1458,8 +1468,11 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COMPRESS_PNG_FILES = YES;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = WE52628779;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Aquarium_Prefix.pch;
 				GCC_THUMB_SUPPORT = NO;
@@ -1468,6 +1481,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.juggleware.Aquarium2;
 				PRODUCT_NAME = Aquarium;
+				PROVISIONING_PROFILE_SPECIFIER = "AQ2 App Store";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
