@@ -59,17 +59,20 @@
     // Add the view controller's view to the window and display.
     //[window addSubview:viewController.view];
     //[window setRootViewController:viewController];
+    
+    UIViewController *launchVC = [[UIViewController alloc] init];
+    
 	
-    [window setRootViewController:tabBarController];
+    [window setRootViewController:launchVC];
 
     
-	[window addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"Default.png"]] autorelease] ];
+	[launchVC.view addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"Default.png"]] autorelease] ];
 	[window makeKeyAndVisible];
 	
 	UIImageView *headLogo = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"head-logo.png"]];
 	[headLogo setCenter: CGPointMake(160.0, 240.0)];
 	headLogo.alpha = 0.0f;
-	[window addSubview: headLogo];
+	[launchVC.view addSubview: headLogo];
 	
 	
 	[UIView beginAnimations:@"showHeadLogo" context:nil];
@@ -92,7 +95,7 @@
 
 
 -(void)loadSplash2{
-	[window addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"psychic_summit-aquarium_2-splash.png"]]autorelease]];
+	[window.rootViewController.view addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"psychic_summit-aquarium_2-splash.png"]]autorelease]];
 	[self performSelector: @selector(loadTabBarController) withObject:nil afterDelay: 3.0f];
 	[self performSelector: @selector(preloadAudio) withObject:nil afterDelay: 0.01f];
 
