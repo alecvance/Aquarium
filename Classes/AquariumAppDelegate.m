@@ -61,16 +61,16 @@
     //[window setRootViewController:viewController];
     
     UIViewController *launchVC = [[UIViewController alloc] init];
-    
+    launchVC.view.backgroundColor = [UIColor colorWithRed:1 green:180 blue:255 alpha:255];
 	
     [window setRootViewController:launchVC];
 
     
-	[launchVC.view addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"Default.png"]] autorelease] ];
+	[launchVC.view addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"Default-568h.png"]] autorelease] ];
 	[window makeKeyAndVisible];
 	
 	UIImageView *headLogo = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"head-logo.png"]];
-	[headLogo setCenter: CGPointMake(160.0, 240.0)];
+	[headLogo setCenter: CGPointMake(160.0, 284.0)];
 	headLogo.alpha = 0.0f;
 	[launchVC.view addSubview: headLogo];
 	
@@ -95,7 +95,20 @@
 
 
 -(void)loadSplash2{
-	[window.rootViewController.view addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"psychic_summit-aquarium_2-splash.png"]]autorelease]];
+    
+    UIView *splash2 =[[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"psychic_summit-aquarium_2-splash.png"]] autorelease];
+    splash2.alpha = 0.0f;
+
+    [window.rootViewController.view addSubview: splash2];
+
+    [UIView beginAnimations:@"loadSplash2" context:nil];
+    splash2.alpha = 1.0f;
+    [UIView setAnimationDuration:2.0f];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+
+    [UIView commitAnimations];
+
+    
 	[self performSelector: @selector(loadTabBarController) withObject:nil afterDelay: 3.0f];
 	[self performSelector: @selector(preloadAudio) withObject:nil afterDelay: 0.01f];
 
@@ -117,16 +130,18 @@
 -(void)loadTabBarController{
 	//[SongPlayer sharedManager]; // makes sure it's ready
 	
-	tabBarController.view.frame = CGRectMake(0, 0, 320, 529);
-
+	//tabBarController.view.frame = CGRectMake(0, 0, 320, 529);
+    tabBarController.view.alpha = 0.0;
 	
 	[UIView beginAnimations:@"showTabBar" context:nil];
 	[UIView setAnimationDuration:0.25];
 	[UIView setAnimationBeginsFromCurrentState:YES];
 	//	[UIView setAnimationCurve: UIViewAnimationCurveEaseOut];
 	
-	tabBarController.view.frame = CGRectMake(0, 0, 320, 480);
+	//tabBarController.view.frame = CGRectMake(0, 0, 320, 480);
 //	[window addSubview: tabBarController.view];
+     tabBarController.view.alpha = 255.0;
+    
     [window setRootViewController:tabBarController];
 
 
