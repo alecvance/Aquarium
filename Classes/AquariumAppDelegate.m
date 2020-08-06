@@ -58,7 +58,11 @@
 
     // Add the view controller's view to the window and display.
     //[window addSubview:viewController.view];
+    //[window setRootViewController:viewController];
 	
+    [window setRootViewController:tabBarController];
+
+    
 	[window addSubview: [[[UIImageView alloc] initWithImage: [UIImage imageNamed:@"Default.png"]] autorelease] ];
 	[window makeKeyAndVisible];
 	
@@ -78,6 +82,7 @@
 	
 	[self performSelector: @selector(loadSplash2) withObject:nil afterDelay: 2.0f];
 
+    
 	audioMixer = [[AudioMixer alloc] init]; //may cause delay loading first set?
 	mixerWasPausedBySystem = NO;
 	songPlayerWasPausedBySystem = NO;
@@ -111,7 +116,6 @@
 	
 	tabBarController.view.frame = CGRectMake(0, 0, 320, 529);
 
-	[window addSubview: tabBarController.view];
 	
 	[UIView beginAnimations:@"showTabBar" context:nil];
 	[UIView setAnimationDuration:0.25];
@@ -119,7 +123,9 @@
 	//	[UIView setAnimationCurve: UIViewAnimationCurveEaseOut];
 	
 	tabBarController.view.frame = CGRectMake(0, 0, 320, 480);
-	[window addSubview: tabBarController.view];
+//	[window addSubview: tabBarController.view];
+    [window setRootViewController:tabBarController];
+
 
 	[UIView commitAnimations];
 	
