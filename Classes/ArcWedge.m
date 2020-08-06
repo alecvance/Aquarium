@@ -55,7 +55,7 @@
 	
 	
 	/* use these transforms instead of the above for centered origin  */
-	t = CGAffineTransformTranslate(t, kScreenWidth/2+x, kScreenHeight/2-y); // step 3: move/position
+	t = CGAffineTransformTranslate(t, kScreenWidth/2.0+x, kScreenHeight/2.0-y); // step 3: move/position
 	t = CGAffineTransformRotate(t, - rotation); // step 2: rotate
 	t = CGAffineTransformScale(t, scale, -scale); // step 1: scale (also flips Y axis!)
 	

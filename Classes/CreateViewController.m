@@ -330,8 +330,8 @@
 #pragma mark touches
 
 -(ArcWedge *)wedgeTouchedAtPos:(CGPoint)pos{
-	CGFloat dx = pos.x - kScreenWidth/2 - kWheelControllerX;
-	CGFloat dy = pos.y - kScreenHeight/2 - kWheelControllerY;
+	CGFloat dx = pos.x - self.view.bounds.size.width /2.0 - kWheelControllerX;
+	CGFloat dy = pos.y - self.view.bounds.size.height /2.0 - kWheelControllerY;
 	CGFloat d = sqrt(dx*dx + dy*dy);
 	//NSLog(@"Got touch at position %f,%f with distance of %f", dx, dy, d);
 	

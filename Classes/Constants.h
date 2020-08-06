@@ -35,8 +35,8 @@
 #define RANDOM_PCT() (((CGFloat)(arc4random() % 40001) )/40000.0)
 
 // Various constants 
-#define kScreenWidth 320
-#define kScreenHeight 432
+#define kScreenWidth ((int)[UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight ((int)[UIScreen mainScreen].bounds.size.height)
 
 #define kWheelControllerX 0.0
 #define kWheelControllerY 0.0
