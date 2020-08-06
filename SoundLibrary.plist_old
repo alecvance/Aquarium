@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sets</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Pale Fire</string>
+			<key>artist</key>
+			<string>Morgan Kuhli</string>
+			<key>id</key>
+			<string>morgan.kuhli-pale.fire-audio.pack</string>
+			<key>color</key>
+			<string>999999</string>
+			<key>samples</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Loop 1</string>
+					<key>file</key>
+					<string>palefireloop1.caf</string>
+					<key>color</key>
+					<string>333333</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 2</string>
+					<key>file</key>
+					<string>palefireloop2.caf</string>
+					<key>color</key>
+					<string>444444</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 3 - Ocean</string>
+					<key>file</key>
+					<string>palefireloop3ocean.caf</string>
+					<key>color</key>
+					<string>555555</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 4 - Forest</string>
+					<key>file</key>
+					<string>palefireloop4forest.caf</string>
+					<key>color</key>
+					<string>666666</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 5 - Birds</string>
+					<key>file</key>
+					<string>palefireloop5birds.caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Natural</string>
+			<key>artist</key>
+			<string>Morgan Kuhli</string>
+			<key>id</key>
+			<string>aquambient.natural</string>
+			<key>color</key>
+			<string>aaaaaa</string>
+			<key>samples</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Loop 1</string>
+					<key>file</key>
+					<string>aquambient.natural.aq2_ps (1).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 2</string>
+					<key>file</key>
+					<string>aquambient.natural.aq2_ps (2).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 3</string>
+					<key>file</key>
+					<string>aquambient.natural.aq2_ps (3).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 4</string>
+					<key>file</key>
+					<string>aquambient.natural.aq2_ps (4).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 5</string>
+					<key>file</key>
+					<string>aquambient.natural.aq2_ps (5).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Relax</string>
+			<key>artist</key>
+			<string>Morgan Kuhli</string>
+			<key>id</key>
+			<string>aquambient.relax_psaq2</string>
+			<key>color</key>
+			<string>cccccc</string>
+			<key>samples</key>
+			<array>
+				<dict>
+					<key>title</key>
+					<string>Loop 1</string>
+					<key>file</key>
+					<string>aquambient.relax_psaq2 (1).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 2</string>
+					<key>file</key>
+					<string>aquambient.relax_psaq2 (2).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 3</string>
+					<key>file</key>
+					<string>aquambient.relax_psaq2 (3).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 4</string>
+					<key>file</key>
+					<string>aquambient.relax_psaq2 (4).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+				<dict>
+					<key>title</key>
+					<string>Loop 5</string>
+					<key>file</key>
+					<string>aquambient.relax_psaq2 (5).caf</string>
+					<key>color</key>
+					<string>777777</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>Songs</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Pale Fire</string>
+			<key>file</key>
+			<string>morgan.kuhli-pale.fire-audio.pack/morgan.kuhli-pale.fire-96.mp3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
