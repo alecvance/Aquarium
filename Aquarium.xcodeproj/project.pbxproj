@@ -258,6 +258,7 @@
 		7099A808127F5025009AEECC /* SlideController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7099A806127F5025009AEECC /* SlideController.xib */; };
 		7099A9411280EE2B009AEECC /* BluRayRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7099A93F1280EE2B009AEECC /* BluRayRemoteViewController.m */; };
 		7099A9421280EE2B009AEECC /* BluRayRemoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7099A9401280EE2B009AEECC /* BluRayRemoteViewController.xib */; };
+		709B31E224DCD3BA0031D92E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 709B31E124DCD3BA0031D92E /* Images.xcassets */; };
 		70AAE8FB123FD6E700BB5BB6 /* ColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AAE8FA123FD6E700BB5BB6 /* ColorModel.m */; };
 		70AAE929124033A500BB5BB6 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AAE928124033A500BB5BB6 /* UIColor-Expanded.m */; };
 		70DE0A33125CED3600F063C0 /* PieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70DE0A32125CED3600F063C0 /* PieView.m */; };
@@ -551,6 +552,8 @@
 		7099A93E1280EE2B009AEECC /* BluRayRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluRayRemoteViewController.h; sourceTree = "<group>"; };
 		7099A93F1280EE2B009AEECC /* BluRayRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluRayRemoteViewController.m; sourceTree = "<group>"; };
 		7099A9401280EE2B009AEECC /* BluRayRemoteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BluRayRemoteViewController.xib; sourceTree = "<group>"; };
+		709B31E024DCD2810031D92E /* Aquarium.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aquarium.entitlements; sourceTree = "<group>"; };
+		709B31E124DCD3BA0031D92E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Aquarium/Images.xcassets; sourceTree = "<group>"; };
 		70AAE8F9123FD6E700BB5BB6 /* ColorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorModel.h; sourceTree = "<group>"; };
 		70AAE8FA123FD6E700BB5BB6 /* ColorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorModel.m; sourceTree = "<group>"; };
 		70AAE90D1240323500BB5BB6 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
@@ -613,6 +616,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				709B31E024DCD2810031D92E /* Aquarium.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -636,6 +640,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				709B31E124DCD3BA0031D92E /* Images.xcassets */,
 				8D1107310486CEB800E47090 /* Aquarium-Info.plist */,
 				707131FC1284A38600E5AE54 /* Library.plist */,
 				70F5A1471296FB01003D0F67 /* Slides */,
@@ -1142,7 +1147,7 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = WE52628779;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1368,6 +1373,7 @@
 				702C3660129B739100DE5B9F /* create-button_ani_19@2x.png in Resources */,
 				702C3661129B739100DE5B9F /* create-button_ani_20@2x.png in Resources */,
 				702C3662129B739100DE5B9F /* create-button_ani_21@2x.png in Resources */,
+				709B31E224DCD3BA0031D92E /* Images.xcassets in Resources */,
 				702C3663129B739100DE5B9F /* create-button_ani_22@2x.png in Resources */,
 				702C3664129B739100DE5B9F /* create-button_ani_23@2x.png in Resources */,
 				702C3665129B739100DE5B9F /* create-button_ani_24@2x.png in Resources */,
@@ -1441,10 +1447,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = Aquarium.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = WE52628779;
@@ -1459,7 +1467,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.juggleware.Aquarium2;
 				PRODUCT_NAME = Aquarium;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				PROVISIONING_PROFILE_SPECIFIER = "Juggleware Developers Profile";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1467,9 +1475,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_ENTITLEMENTS = Aquarium.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = WE52628779;
@@ -1481,7 +1491,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.juggleware.Aquarium2;
 				PRODUCT_NAME = Aquarium;
-				PROVISIONING_PROFILE_SPECIFIER = "AQ2 App Store";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
